@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi color website</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+</style>
+<style>
+    :root {
+        --prim_color: blueviolet;
+        --text_color: aliceblue;
+        --sec_color: rgb(188, 159, 214);
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        background-color: var(--prim_color);
+        color: var(--text_color);
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        list-style: none;
+        padding: 25px;
+        font-family: "Underdog", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    body {
+        background-color: var(--sec_color);
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>services</li>
+                <li>Contact us</li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>

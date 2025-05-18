@@ -17,19 +17,28 @@
         }
 
         body {
+            align-items: center;
             background-color: black;
         }
-        nav{
+
+        nav {
             position: sticky;
             top: 0;
-            
+
         }
+
+        a {
+            text-decoration: none;
+            color: var(--sec_color);
+        }
+
         ul {
+            list-style-type: none;
             background-color: var(--prim_color);
             display: flex;
             justify-content: space-evenly;
             border: 10px solid var(--prim_color);
-            
+
         }
 
         .container {
@@ -45,6 +54,7 @@
             height: 750px;
             padding: 5px;
             margin-top: 100px;
+            overflow: auto;
 
         }
 
@@ -57,27 +67,28 @@
         }
 
         .content {
-            width: 900px;
-            height: 400px;
+            width: 400px;
+            height: 196px;
             padding: 20px;
             margin: 50px auto;
             color: aliceblue;
             text-align: center;
-            margin-left: 600px;
-            font-size: 40px;
+            font-size: 30px;
             border: 2px solid whitesmoke;
             border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        footer{
+
+        footer {
             color: aliceblue;
             background-color: blueviolet;
             padding: 50px;
             text-align: center;
         }
-        .round{
+
+        .round {
             height: 50px;
             width: 50px;
             border-radius: 50%;
@@ -85,6 +96,7 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -92,10 +104,10 @@
 <body>
     <nav>
         <ul>
-            <li>Home</li>
-            <li>Courses</li>
-            <li>About</li>
-            <li>Contact us</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Courses</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact us</a> </li>
         </ul>
     </nav>
     <div class="container">

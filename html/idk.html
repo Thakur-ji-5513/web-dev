@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sidebar {
+            width: 200px;
+            background-color: #1a1a1a;
+            padding: 20px;
+            color: white;
+            height: 50vh;
+        }
+
+        .menu-item {
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .submenu {
+            max-height: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            transition: max-height 0.3s ease;
+        }
+
+        /* When checkbox is checked, reveal submenu */
+        #toggle-menu:checked~.submenu {
+            max-height: 500px;
+            /* enough space for all items */
+        }
+
+        .submenu a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+    <div class="sidebar">
+  <input type="checkbox" id="toggle-menu" hidden>
+  <label for="toggle-menu" class="menu-item">☰ Menu</label>
+
+  <div class="submenu">
+    <a href="#">Option 1</a>
+    <a href="#">Option 2</a>
+    <a href="#">Option 3</a>
+  </div>
+</div>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

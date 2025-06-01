@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample site</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .header-cont{
+            display: flex;
+            padding: 20px 10%;
+        }
+         body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            flex-grow: 1;
+        }
+
+        .options {
+            list-style-type: none;
+            display: flex;
+            font-size: 16px;
+            cursor: pointer;
+            gap: 30px;
+        }
+        .options li{
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-top: 27px;
+        }
+
+        .options li::after {
+            background-image: url("icons8-down-arrow-50.png");
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-size: contain;
+            margin-left: 5px;
+            margin-right: 0px;
+        }
+         .options li:nth-child(4)::after {
+            display: none;
+        }
+
+        .logo {
+            height: 60px;
+            margin-left: 6vw;
+            margin-right: 14vw;
+            cursor: pointer;
+        }
+        .op{
+            margin-top: 30px;
+        }
+        .options div::before{
+            background-image: url("icons8-earth-50.png");
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+
+            margin-right: 10px;
+
+        }
+        .options div::after{
+            background-image: url("icons8-search-50.png");
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+            margin-left: 10px;
+            margin-right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-cont">
+
+
+        <img class="logo" src="logo.png">
+        <nav>
+            <ul class="options">
+                <li>Products</li>
+                <li>For business</li>
+                <li>Resources</li>
+                <li>Academic licensing</li>
+                <li>Our company</li>
+                <div class="op">English </div>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+
+</html>

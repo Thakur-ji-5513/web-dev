@@ -1,0 +1,24 @@
+# 🚫 Ignore videos
+*.mp4
+*.mov
+*.avi
+
+# 🚫 Ignore Office and PDF files
+*.docx
+*.pdf
+
+# 🚫 Ignore large images (optional - remove if you want them tracked)
+*.jpg
+*.png
+
+# 🧹 Ignore system junk
+.DS_Store
+Thumbs.db
+
+# 🛠 Ignore build folders (for future use)
+node_modules/
+dist/
+build/
+
+# ❌ Ignore this specific folder
+videos/

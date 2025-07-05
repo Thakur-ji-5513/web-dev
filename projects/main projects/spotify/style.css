@@ -13,7 +13,7 @@ body{
 .sidebar{
     background-color: black;
     border-radius: 1rem;
-    width: 340px;
+    width: 25vw;
 }
 .main-content {
     padding: 0 1.5rem 100px 1.5rem;
@@ -277,4 +277,8 @@ cursor: pointer;
     transform: scale(1.3);
     opacity: 1;
 
+}
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease-in-out;
 }

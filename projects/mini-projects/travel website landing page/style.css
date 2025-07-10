@@ -1,0 +1,26 @@
+.carousel-item img {
+  height: 80vh;
+}
+body {
+  background-color: #1c1c1c; /* slightly cleaner dark */
+  color: #f8f9fa;            /* light text */
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer h5 {
+  color: #ffffff;
+}
+
+footer a {
+  color: #bbbbbb;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}

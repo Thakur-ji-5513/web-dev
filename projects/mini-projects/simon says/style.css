@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+div{
+    margin: 0 auto;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.boxes{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+.one{
+    background-color: pink;
+}
+.two{
+    background-color: rgba(36, 36, 206, 0.781);
+}
+.three{
+    background-color: rgb(196, 133, 16);
+}
+.four{
+    background-color: blue;
+}
+
+.flash{
+    background-color: white;
+}
